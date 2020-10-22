@@ -1,11 +1,10 @@
-var ball, dustbin, ground;
+var ball, Bin1, g1;
 
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-var ball;
 
 function preload()
 {
@@ -67,3 +66,8 @@ function draw() {
 
 
 
+function keyPressed (){
+  if (keyCode==32) {
+    Matter.Body.applyForce(ball.object,ball.object.position,{x:65, y:-70})
+  }
+}

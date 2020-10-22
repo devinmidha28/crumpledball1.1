@@ -33,7 +33,7 @@ class dustbin {
         push(); 
         translate(this.object3.position.x,this.object3.position.y);
         rectMode(CENTER);
-        rect(0,0,20,200);
+        rect(0,0,200,20);
 
         pop();
     }

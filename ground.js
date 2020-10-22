@@ -8,13 +8,18 @@ class Ground {
         World.add(world, this.object);
         this.width=width;
         this.height=height
+
+
+    }
     
-    display(); {
+    display() {
         push();
         rectMode (CENTER);
-        rect (this.length, this.widt);
         translate(this.object.position.x, this.object.position.y);
+        rect(0,0, this.width, this.height);
+        pop();
+
     }
-}
+    
 
 }
